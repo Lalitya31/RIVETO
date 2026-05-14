@@ -41,7 +41,8 @@ export const addProduct = async (req, res) => {
             return res.status(400).json({ message: "Invalid sizes: expected a JSON array." });
           }
         } catch (parseError) {
-          return res.status(400).json({ message: "Invalid sizes JSON.", error: parseError.message });
+          console.error("❌ Invalid sizes JSON in addProduct:", parseError);
+          return res.status(400).json({ message: "Invalid sizes JSON." });
         }
       } else if (Array.isArray(sizes)) {
         parsedSizes = sizes;
