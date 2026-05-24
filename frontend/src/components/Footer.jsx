@@ -147,6 +147,7 @@ function Footer() {
             {[
               { name: 'Home', to: '/' },
               { name: 'About Us', to: '/about' },
+              { name: 'Contributors', to: '/contributors' },
               { name: 'Products', to: '/product' },
               { name: 'Collections', to: '/collection' },
               { name: 'New Arrivals', to: '/new-arrivals' },
